@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Winter Wyvern Builds</title>
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+<style>
+body,html{ height: 100%; color: skyblue; font-family: Arial;margin: 0;}
+@media (min-width: 0px) {body {background: url(bgmobile.png);}}
+
+@media (min-width: 576px) {body {background: url(bgsm.png);}}
+
+@media (min-width: 768px) {body {background: url(bgmd.png);}}
+
+@media (min-width: 992px) {body {background: url(bglg.png);}}
+
+@media (min-width: 1200px) {body{background: url(bg.png);}}
+
+body{background-size: cover;background-position: center center;background-attachment: fixed;}
+
+.item {text-align: center;display: inline-block;overflow: hidden;position: relative;text-decoration: none;}
+
+.item:before {display: block;background-color: rgb(0, 0, 0);content: "";height: 100%;opacity: 0;position: absolute;width: 100%;z-index: 2;}
+
+.item:after {font-family: 'Lucida Console';color: white;content: attr(alt);display: block;font-size: 16px;opacity: 0;padding: 0 3%;position: absolute;text-transform: none;top: 50%;-webkit-transform-origin: 50% 0%;transform-origin: 50% 0%;-webkit-transform: scale(0) translateY(-50%);transform: scale(0) translateY(-50%);width: 94%;z-index: 3;}
+
+.item img {border: none;display: block;z-index: 1;}
+
+.item:after {-webkit-transition: all 350ms ease-in-out;transition: all 350ms ease-in-out;}
+
+.item:hover:before {opacity: 0.6;}
+
+.item:hover:after {opacity: 1;-webkit-transform: scale(1) translateY(-50%);transform: scale(1) translateY(-60%);}
+
+
+.hr{
+	border-color: skyblue;
+}
+
+.skillicon{
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar{
+	width: 0;
+}
+
+.undertext{
+	font-size: 15px;
+	font-family: Arial;
+	color: gray;
+	opacity: 0.8;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    widht: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+</style>
+	
+</head>
+<body>
+	<div id="main">
+	<span style="font-size:30px;cursor:pointer; color: skyblue;" onclick="openNav()">☰ open</span>	
+	<h1 style="position: relative;text-align: center;">Dota 2 Builds</h1>
+	<hr class="hr">
+	<h2 style="position: relative;text-align: left;">Winter Wyvern</h2>
+	<hr class="hr">
+	<span style="font-size: 20px">Как и другим великим поэтам, Аурос постоянно не хватает времени на творчество, ведь жизнь ее полна неожиданностей. Эпос древних драконов знаменит своей долгой и насыщенной историей, но некоторые с опаской полагают, что оставшиеся ученые драконы не настолько плодовиты, как их предки, поскольку с момента процветания в Сказание драконов было добавлено всего лишь несколько строк. Аурос сетует: «Мы стали забывать, что жизнь — это не только победы над врагами и завоевания земель. Каждый должен стремиться к творчеству». Она собралась в исследовательскую экспедицию на поиски новых книг для вдохновения. Но эти исследования жутко утомляют и отвлекают от творческого процесса, на который должно уходить гораздо больше времени. Хоть Аурос и должна скрываться в своем логове, постоянно пополняя сказание, она часто вступает в грандиозные битвы с могучими противниками. Она обыскивает замки и древние библиотеки, а славу, заслуженную в процессе своих поисков, считает побочным эффектом этих исследований. Ее мастерство и отвага на полях сражений стали легендарными, но в муках творчества она не смогла создать того, что заслужило бы признание. Как бы то ни было, она не будет довольствоваться ролью героя сказания. Она хочет быть его автором.</span>
+
+	<hr class="hr">
+	<h2 style="position: relative;">Способности/Abulities</h2>
+
+
+	<hr class="hr">
+	<h2 style="position: relative;text-align: center;">Arctic Burn</h2>	
+	<img class="skillicon" src="burn.png" align="left" alt="img">
+	<span>Герой взмывает в небо на арктическом ветре, получая беспрепятственное передвижение и вдыхая жгучий мороз в каждую свою атаку. В полёте можно атаковать дальше и быстрее. Цель морозных атак замедляется и каждую секунду получает урон в размере 6/7/8/9% от текущего запаса здоровья. Также эта способность защищает глаза от ночной прохлады, увеличивая радиус ночного обзора в полёте на 400.</span>
+	<br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 100 (Aghanim's Scepter: 20)</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: Перезарядка: 38/32/26/20 </div>
+	<br><br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>ненаправленная/переключаемая (с Aghanim's Scepter)</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>себя/врагов</p>
+	<p><b>Тип урона: </b>магический</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Базовая анимация атаки: </b>0,1</p>
+	<p style="line-height: 0.2em;"><b>Бонус к дальности атаки: </b>350/400/450/500</p>
+	<p style="line-height: 0.2em;"><b>Бонус к скорости полета снаряда: </b>500</p>
+	<p style="line-height: 0.2em;"><b>Доп. радиус обзора ночью: </b>400</p>
+	<p style="line-height: 0.2em;"><b>Урон от текущего здоровья в секунду: </b>6/7/8/9%</p>
+	<p style="line-height: 0.2em;"><b>Замедление передвижения: </b>16/24/32/40% (Талант: 28/36/44/52%)</p>
+	<p style="line-height: 0.2em;"><b>Длительность эффекта: </b>5 (Талант: 7)</p>
+	<p style="line-height: 0.2em;"><b>Длительность:</b>7/8/9/10 </p>
+	
+	
+	<span class="undertext">Из органа, которым драконы извергают пламя, Аурос выдыхает невообразимый холод, который ввергает врагов в жгучую агонию.</span>
+
+
+
+	<hr class="hr">
+	<h2 style="position: relative;text-align: center;">Splinter Blast</h2>	
+	<img class="skillicon" src="blast.png" align="left" alt="img">
+	<span>Запускает во врага ледяной шар, который после удара раскалывается на осколки, летящие в противников в радиусе 500 вокруг цели, не причиняя ей ущерб. Задетые осколками противники будут замедлены на 30%.</span>
+	<br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 105/120/135/150</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 7</div>
+	<br><br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>направленная на юнита</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов</p>
+	<p style="line-height: 0.2em;"><b>Тип урона: </b>магический</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Дальность применения: </b>1200</p>
+	<p style="line-height: 0.2em;"><b>Радиус разлёта осколков:</b>500 (Талант: 900)</p>
+	<p style="line-height: 0.2em;"><b>Урон:  </b>100/180/260/340 (Талант: 200/280/360/440) </p>
+	<p style="line-height: 0.2em;"><b>Замедление скорости передвижения: </b>30% </p>
+	<p style="line-height: 0.2em;"><b>Длительность замедления: </b>4</p>
+	<p style="line-height: 0.2em;"><b>Длительность оглушения: 0</b>5 </p>
+	<p style="line-height: 0.2em;"><b>Длительность задержки ауры True Sight: </b>0 (Талант: 1,5)</p>
+	<span class="undertext">Виверна запускает во врагов ледяной шар, медленно собирающийся железами ее холодной глотки.</span>
+	
+
+	<hr class="hr">
+	<h2 style="position: relative;text-align: center;">Cold Embrace</h2>	
+	<img class="skillicon" src="cold.png" align="left" alt="img">
+	<span>Заковывает союзника в ледяной кокон, замораживая его и ежесекундно восстанавливая определенное число здоровья плюс процент от максимального уровня здоровья. Кокон полностью блокирует весь физический урон.</span>
+	<br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 50/60/70/80</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 24/21/18/15 (Aghanim's Shard: 20/17/14/11)</div>
+	<br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>направленная на юнита</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>союзников</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Дальность применения: </b>850/900/950/1000</p>
+	<p style="line-height: 0.2em;"><b>Базовая регенерация здоровья: </b>30/35/40/45 (Талант: 55/60/65/70)</p>
+	<p style="line-height: 0.2em;"><b>Регенерация от процента максимального здоровья: </b>1,75/2,5/3,25/4% </p>
+	<p style="line-height: 0.2em;"><b>Длительность: </b>4</p>
+	<span class="undertext">Сердце зимы заключает раненого в холодные целительные объятья. Лёд замедляет течение крови и упрощает работу лечебной магии</span>
+	
+
+
+	<hr class="hr">
+	<h2 style="position: relative;text-align: center;">Winter's Curse</h2>	
+	<img class="skillicon" src="curse.png" align="left" alt="img">
+	<span>Примораживает противника к земле, повергая окружающих его союзников в безумие и заставляя их атаковать цель способности с повышенной скоростью. Противники под этим эффектом получают урон только от своих союзников, владельца способности и его подконтрольных существ.</span>
+	<br><br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 250</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 90/85/80</div>
+	<br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b> направленная на юнита</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Дальность применения: </b> 700/750/800 </p>
+	<p style="line-height: 0.2em;"><b>Радиус: </b>525</p>
+	<p style="line-height: 0.2em;"><b>Уменьшение получаемого урона: </b>100%</p>
+	<p style="line-height: 0.2em;"><b>Увеличение скорости атаки: </b>65</p>
+	<p style="line-height: 0.2em;"><b>Длительность:</b>4,5/5/5,5 (Талант: 6/6,5/7)</p>
+	<p style="line-height: 0.2em;"><b>Таймер проверки ближайших союзников: </b>2,5</p>
+	<span class="undertext">Старейшее из заклинаний, почитаемых драконами-писателями, открывает глаза на истину: иногда враг моего врага — мой враг.</span>
+	
+
+
+	<hr class="hr">
+	<h2 style="position: relative;text-align: left;">Сборка/Builds</h2>
+	<h3>Начальный закуп:</h3>
+	<a class="item" href="https://dota2.ru/items/tango/" title="" alt="Tango"><img src="item/tango.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/healing-salve/" alt="Healing Salve"><img src="item/flask.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/enchanted-mango/" title="" alt="mango"><img src="item/mango.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/enchanted-mango/" title="" alt="mango"><img src="item/mango.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/ward-sentry/" title="" alt="ward_sentry"><img src="item/ward_sentry.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/ward-observer/" title="" alt="ward_observer"><img src="item/ward_observer.png" alt=""></a>
+	<h3>Основные предметы:</h3>
+	<a class="item" href="https://dota2.ru/items/arcane-boots/" title="" alt="Arcane Boots"><img src="item/arcane_boots.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/force-staff/" title="" alt="force staff"><img src="item/force_staff.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/glimmer-cape/" title="" alt="glimmer cape"><img src="item/glimmer_cape.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/aether-lens/" title="" alt="Aether Lens"><img src="item/aether_lens.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/aghanims-scepter/" title="" alt="Aghanim's Scepter"><img src="item/aghanims_scepter.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/aghanims-shard/" title="" alt="Aghanim's shard"><img src="item/aghanims_shard.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/refresher-orb/" title="" alt="Refresher Orb"><img src="item/refresher_orb.png" alt=""></a>
+
+	
+	
+	<br>
+	
+	<hr class="hr">
+	<a href="https://dota2.ru">  <img src="int.png" align="right"></a>
+	<br>
+	<br>
+	<a href="https://ci.nsu.ru">  <img src="vki.png" align="left"></a>
+	</div>
+	<div id="mySidenav" class="sidenav">
+  		<a style="color: lightblue;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  		<a href="https://dg-star.github.io">Main Menu</a>
+  		<a href="https://dota2.ru">Dota 2.ru</a>
+  		<a href="https://ci.nsu.ru">VKI NSU</a>
+  		<a href="#">Support us</a>
+  		<a href="https://dg-star.github.io/contact/contact.html">Contact</a>
+	</div>
+	
+</div>
+
+<script>
+	function openNav() {
+    	document.getElementById("mySidenav").style.width = "250px";
+    	document.getElementById("main").style.marginLeft = "250px";
+    	document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+	}
+
+	function closeNav() {
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginLeft= "0";
+    	document.body.style.backgroundColor = "white";
+	}
+</script>
+</div>
+</body>		
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

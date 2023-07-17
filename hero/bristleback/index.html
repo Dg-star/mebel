@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bristleback Builds</title>
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+<style>
+body,html{ height: 100%; color: yellow; font-family: Arial;margin: 0;}
+@media (min-width: 0px) {body {background: url(bgmobile.png);}}
+
+@media (min-width: 576px) {body {background: url(bgsm.png);}}
+
+@media (min-width: 768px) {body {background: url(bgmd.png);}}
+
+@media (min-width: 992px) {body {background: url(bglg.png);}}
+
+@media (min-width: 1200px) {body{background: url(bg.png);}}
+
+body{background-size: cover;background-position: center center;background-attachment: fixed;}
+
+.item {text-align: center;display: inline-block;overflow: hidden;position: relative;text-decoration: none;}
+
+.item:before {display: block;background-color: rgb(0, 0, 0);content: "";height: 100%;opacity: 0;position: absolute;width: 100%;z-index: 2;}
+
+.item:after {font-family: 'Lucida Console';color: white;content: attr(alt);display: block;font-size: 16px;opacity: 0;padding: 0 3%;position: absolute;text-transform: none;top: 50%;-webkit-transform-origin: 50% 0%;transform-origin: 50% 0%;-webkit-transform: scale(0) translateY(-50%);transform: scale(0) translateY(-50%);width: 94%;z-index: 3;}
+
+.item img {border: none;display: block;z-index: 1; border-radius: 10px;}
+
+.item:after {-webkit-transition: all 350ms ease-in-out;transition: all 350ms ease-in-out;}
+
+.item:hover:before {opacity: 0.6;}
+
+.item:hover:after {opacity: 1;-webkit-transform: scale(1) translateY(-50%);transform: scale(1) translateY(-60%);}
+
+
+
+.hr{
+	border-color: yellow;
+}
+
+.skillicon{
+	border-radius: 10px;
+}
+::-webkit-scrollbar{
+	width: 0;
+}
+
+.undertext{
+	font-size: 15px;
+	font-family: Arial;
+	color: gray;
+	opacity: 0.8;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    widht: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+</style>
+	
+</head>
+<body>
+	<div id="main">
+	<span style="font-size:30px;cursor:pointer; color: yellow;" onclick="openNav()">☰ open</span>
+	<h1 style="position: relative;text-align: center;">Dota 2 Builds</h1>
+	<hr class="hr">
+	<h2 style="position: relative;text-align: left;">Bristleback</h2>
+	<hr class="hr">
+	<span style="font-size: 20px">Ригварл никогда не уходил от драк и не поворачивался спиной к противнику, даже если тот был крупнее и сильнее его. Окрещенный пьяными толпами как Bristleback, он стал постоянным участником подпольных боев, что проводились в тавернах на тракте между Сломом и Эльзе. Однажды умелого бойца заприметил один трактирщик, искавший вышибалу в бар. За скромную выпивку он стал собирать с посетителей плату, следить за порядком и время от времени ломать конечности особо несговорчивым клиентам (а одному членистоногому бедняге однажды сломал целых пять). Но все же Ригварлу довелось встретить бойца, равного себе. Однажды во время очередной вечерней вахты, уже будучи навеселе от хмеля, он подошел за платой к одному кряжистому детине с севера и заплетающимся языком пробормотал: «Что-то не нравятся мне ваши бивни, уважаемый». Что тут началось! Это было побоище века! В бой бросилось с дюжину посетителей. Не уцелел ни один стул. Хотя Ригварл изрядно приложился к буянам, но и сам в полной мере схлопотал по печени. И все бы ничего, но случилось нечто страшное — клиент ушел, не заплатив за выпивку. За несколько недель раны вышибалы затянулись, а вырванные иглы отросли, но удар по чести был нанесен непростительный. Счет он оплатил из своего кармана, поклявшись выследить северянина и взыскать плату по полной. После этого он занялся тренировками, чего не делал никогда ранее, и неожиданно для себя сделал поразительное открытие. Расправив иглы и усмехнувшись сквозь зубы, он понял — иногда все же стоит показывать противнику спину.</span>	
+	<hr class="hr">
+	<h2 style="position: relative;">Способности/Abulities</h2>
+	
+	<hr class="hr">
+	<h2 style="position: relative;text-align: center;">Viscous Nasal Goo</h2>	
+	<img class="skillicon" src="goo.png" align="left" alt="img">
+	<span>Обильно сморкается на жертву, снижая её броню и скорость передвижения. Эффекты способности складываются, а время действия обновляется с каждым её применением.</span>
+	<br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 12/16/20/24</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 1,75</div>
+	<br><br><br>
+	<p><b>Способность: </b>направленная на юнита/ненаправленная (с Aghanim's Scepter)</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Дальность применения: </b>650 (<b>Талант:</b> 800)</p>
+	<p style="line-height: 0.2em;"><b>Максимум эффектов: </b>4</p>
+	<p style="line-height: 0.2em;"><b>Базовое снижение брони: </b>2</p>
+	<p style="line-height: 0.2em;"><b>Снижение брони за каждый эффект: </b>1,5/2/2,5/3</p>
+	<p style="line-height: 0.2em;"><b>Базовое замедление скорости передвижения: </b>15%</p>
+	<p style="line-height: 0.2em;"><b>Замедление за каждый эффект: </b>3%/6%/9%/12%</p>
+	<p style="line-height: 0.2em;"><b>Длительность на героях: </b>5</p>
+	<p style="line-height: 0.2em;"><b>Длительность на крипах: </b>10</p>
+	<span class="undertext">Простуду, подхваченную в снегах, Ригварл делает своим преимуществом.</span>
+	<hr class="hr">
+
+
+	<h2 style="position: relative;text-align: center;">Quill Spray</h2>	
+	<img class="skillicon" src="spray.png" align="left" alt="img">
+	<span>Выпускает во все стороны иглы, нанося урон всем врагам вокруг себя. Жертвы получают дополнительный урон за каждое попадание иглами за последние 14 сек.</span>
+	<br><br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 35</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 3</div>
+	<br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>ненаправленная</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов</p>
+	<p style="line-height: 0.2em;"><b>Тип урона: </b>физический</p>	
+	<br>	
+	<p style="line-height: 0.2em;"><b>Радиус: </b>700</p>
+	<p style="line-height: 0.2em;"><b>Базовый урон: </b>25/45/65/85</p>
+	<p style="line-height: 0.2em;"><b>Доп. урон за каждый эффект: </b>28/30/32/34 (<b>Талант:</b> 48/50/52/54)</p>
+	<p style="line-height: 0.2em;"><b>Бонус к скорости передвижения в стойке шторма: </b>5/7/9/11%</p>
+	<p style="line-height: 0.2em;"><b>Максимальный урон: </b>550</p>
+	<p style="line-height: 0.2em;"><b>Длительность одного эффекта: </b>14</p>
+	<span class="undertext">Честь вышибалы — острый вопрос. Как и его шипы.</span>
+	<hr class="hr">
+
+
+
+	<h2 style="position: relative;text-align: center;">Bristleback</h2>	
+	<img class="skillicon" src="br.png" align="left" alt="img">
+	<span>Герой получает меньше урона от атак со спины и с боков. При получении 200 урона со спины применяется способность Quill Spray текущего уровня.</span>
+	<br><br><br><br><br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>пассивная</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>себя</p>	
+	<br>
+	<p style="line-height: 0.2em;"><b>Угол спины: </b>70°</p>
+	<p style="line-height: 0.2em;"><b>Угол боков: </b>110°</p>
+	<p style="line-height: 0.2em;"><b>Снижение урона от атак в спину: </b>16%/24%/32%/40% (<b>Талант:</b> 24/32/40/48%)</p>
+	<p style="line-height: 0.2em;"><b>Снижение урона от атак с боков: </b>8%/12%/16%/20% (<b>Талант:</b> 12/16/20/24%)</p>
+	<p style="line-height: 0.2em;"><b>Предел урона: </b>200</p>
+	<span class="undertext">Иногда бывает полезно повернуться спиной к врагу во время битвы.</span>
+	<hr class="hr">
+
+
+	<h2 style="position: relative;text-align: center;">Hairball</h2>	
+	<img class="skillicon" src="ball.png" align="left" alt="img">
+	<span>Отхаркивает в указанную область комок игл. Приземлившись, он лопается и применяет на всех врагов вокруг один эффект Viscous Nasal Goo и несколько эффектов Quill Spray.</span>
+	<br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 100</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка:  20</div>
+	<br><br><br>
+	
+	<p style="line-height: 0.2em;"><b>Способность: </b>направленная на область</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов</p>
+	<p style="line-height: 0.2em;"><b>Тип урона: </b>физический</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Дальность применения: </b>1500</p>
+	<p style="line-height: 0.2em;"><b>Радиус: </b>700</p>
+	<p style="line-height: 0.2em;"><b>Количество эффектов Quill Spray: </b>2</p>
+	<p style="line-height: 0.2em;"><b>Интервал применения Quill Spray: </b>0,1</p>
+	<p style="line-height: 0.2em;"><b>Количество эффектов Viscous Nasal Goo: </b>1</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Для активации способности требуется Aghanim's Shard.</b></p>
+	<hr class="hr">
+
+
+	<h2 style="position: relative;text-align: center;">Warpath</h2>	
+	<img class="skillicon" src="wr.png" align="left" alt="img">
+	<span>Герой нагоняет на себя ярость каждый раз, когда использует способность, повышая свои скорость передвижения и урон.</span>
+	<br><br><br><br><br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>пассивная</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>себя</p>	
+	<br>	
+	<p style="line-height: 0.2em;"><b>Макс. количество эффектов: </b>6/8/10</p>
+	<p style="line-height: 0.2em;"><b>Доп. урон за каждый эффект: </b>20/25/30 (<b>Талант:</b> 38/43/48)</p>
+	<p style="line-height: 0.2em;"><b>Доп. скорость за каждый эффект: </b>3%/4%/5%</p>
+	<p style="line-height: 0.2em;"><b>Длительность одного эффекта: </b>16/18/20</p>
+	<span class="undertext">«Держи себя в руках», — часто наставляла его мама. Но в битве ярость всегда к месту.</span>
+	<hr class="hr">
+
+
+
+	<h2 style="position: relative;text-align: left;">Сборка/Builds</h2>
+	<h3>Starting items:</h3>
+	<a class="item" href="https://dota2.ru/items/tango/" title="" alt="Tango"><img src="item/tango.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/tango/" title="" alt="Tango"><img src="item/tango.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/quelling-blade/" title="" alt="Quelling Blade"><img src="item/blade.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/enchanted-mango/" title="" alt="Enchanted Mango"><img src="item/mango.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/enchanted-mango/" title="" alt="Enchanted Mango"><img src="item/mango.png" alt=""></a>
+
+
+	<h3>Early game:</h3>
+	<a class="item" href="https://dota2.ru/items/phase-boots/" title="" alt="Phase Boots"><img src="item/phase.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/vanguard/" title="" alt="Vanguard"><img src="item/vg.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/blade-mail/" title="" alt="Blade Mail"><img src="item/blade_mail.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/aghanims-shard/" title="" alt="Aghanim's Shard"><img src="item/shard.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/eternal-shroud/" title="" alt="Eternal Shroud"><img src="item/eternal_shroud.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/aghanims-scepter/" title="" alt="Aghanim's Scepter"><img src="item/ultimate_scepter.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/heart-of-tarrasque/" title="" alt="Heart of Tarrasque"><img src="item/heart.png" alt=""></a>
+	<br>
+	<a style="font-size: 25px; text-decoration: none; color: lightblue; text-align: left" href="https://www.youtube.com/@greyshark_official" >YOUTUBE:GREYSHARK</a><br>
+	<a style="font-size: 25px; text-decoration: none; color: lightblue;align: right;" href="https://www.dota2.com/workshop/builds/view?embedded=workshop&publishedfileid=209135338&target_uri=https://steamcommunity.com&l=russian&u=public">
+	ЭТА СБОРКА В STEAM</a>
+	<hr class="hr">
+	<a href="https://dota2.ru">  <img src="int.png" align="right"></a>
+	<br>
+	<br>
+	<a href="https://ci.nsu.ru">  <img src="vki.png" align="left"></a>
+	</div>
+<div id="mySidenav" class="sidenav">
+  		<a style="color: yellow;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  		<a href="https://dg-star.github.io">Main Menu</a>
+  		<a href="https://dota2.ru">Dota 2.ru</a>
+  		<a href="https://ci.nsu.ru">VKI NSU</a>
+  		<a href="#">Support us</a>
+  		<a href="https://dg-star.github.io/contact/contact.html">Contact</a>
+	</div>
+	
+</div>
+
+<script>
+	function openNav() {
+    	document.getElementById("mySidenav").style.width = "250px";
+    	document.getElementById("main").style.marginLeft = "250px";
+    	document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+	}
+
+	function closeNav() {
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginLeft= "0";
+    	document.body.style.backgroundColor = "white";
+	}
+</script>
+</body>		
+</html>

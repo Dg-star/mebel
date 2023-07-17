@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Beastmaster Builds</title>
+
+
+	<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+	<link rel="manifest" href="icon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="icon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+<style>
+body,html{ height: 100%; color: green; font-family: Arial;margin: 0;}
+@media (min-width: 0px) {body {background: url(bgmobile.png);}}
+
+@media (min-width: 576px) {body {background: url(bgsm.png);}}
+
+@media (min-width: 768px) {body {background: url(bgmd.png);}}
+
+@media (min-width: 992px) {body {background: url(bglg.png);}}
+
+@media (min-width: 1200px) {body{background: url(bg.png);}}
+
+body{background-size: cover;background-position: center center;background-attachment: fixed;}
+
+.item {text-align: center;display: inline-block;overflow: hidden;position: relative;text-decoration: none;}
+
+.item:before {display: block;background-color: rgb(0, 0, 0);content: "";height: 100%;opacity: 0;position: absolute;width: 100%;z-index: 2;}
+
+.item:after {font-family: 'Lucida Console';color: white;content: attr(alt);display: block;font-size: 16px;opacity: 0;padding: 0 3%;position: absolute;text-transform: none;top: 50%;-webkit-transform-origin: 50% 0%;transform-origin: 50% 0%;-webkit-transform: scale(0) translateY(-50%);transform: scale(0) translateY(-50%);width: 94%;z-index: 3;}
+
+.item img {border: none;display: block;z-index: 1;}
+
+.item:after {-webkit-transition: all 350ms ease-in-out;transition: all 350ms ease-in-out;}
+
+.item:hover:before {opacity: 0.6;}
+
+.item:hover:after {opacity: 1;-webkit-transform: scale(1) translateY(-50%);transform: scale(1) translateY(-60%);}
+
+
+
+.hr{
+	border-color: green;
+}
+
+.skillicon{
+	border-radius: 10px;
+}
+::-webkit-scrollbar{
+	width: 0;
+}
+
+.undertext{
+	font-size: 15px;
+	font-family: Arial;
+	color: gray;
+	opacity: 0.8;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    widht: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+</style>
+	
+</head>
+<body>
+	<div id="main">
+	<span style="font-size:30px;cursor:pointer; color: green;" onclick="openNav()">☰ open</span>
+	<h1 style="position: relative;text-align: center;">Dota 2 Builds</h1>
+	<hr class="hr">
+	<h2 style="position: relative;text-align: left;">Beastmaster</h2>
+	<hr class="hr">
+	<span style="font-size: 20px">Детство Карроха прошло несладко. Мать его умерла при родах. Отца, кузнеца при последнем короле Слома, казнили, растоптав насмерть, когда ребенку было пять лет. Тогда Карроха поселили в королевский зверинец, где он рос среди животных из королевского зверинца: львов, обезьян, оленей-падунов и других, менее известных существ, в которых не всякий верил. На седьмой год жизни парня королевский лазутчик привел во дворец новую тварь. Ее подтащили к королю, закованную в цепи, и та заговорила, хоть и не двигала ртом. Просила она об одном: свободе. Король лишь рассмеялся и приказал зверю выступать ему на потеху, а когда тот отказался, огрел его своим Диким скипетром и приказал отправить тварь в темницу. Следующие месяцы мальчик тайком проносил к существу еду и лекарства, но они лишь слегка отодвигали полное истощение. Без слов зверь говорил с мальчиком, и со временем их связь усилилась настолько, что Каррох понял — он может поддерживать разговор. Более того, он научился общаться со всеми обитателями королевского зверинца. В ночь, когда зверь умер, мальчик впал в ярость. Он повел чудищ войной на прислужников короля, отперев клетки и выпустив зверей на дворцовые земли. В погроме был насмерть закусан, заклеван и зацарапан и сам последний король. Пока царила неразбериха, Каррох освободил одного из королевских оленей, и тот поклонился в ответ, а затем, с Каррохом на спине, перемахнул через высокие стены дворца, унося того из проклятого места. Теперь повелитель зверей Каррох по прозвищу Beastmaster уже взрослый мужчина, но он не потерял способности говорить с дикими зверьми. Сирота из королевского зверинца превратился в неукротимого воина природы.</span>	
+	<hr class="hr">
+	<h2 style="position: relative;">Способности/Abulities</h2>
+	<hr class="hr">
+	<h2 style="position: relative;text-align: center;">Wild Axes</h2>	
+	<img class="skillicon" src="axes.png" align="left" alt="img">
+	<span>Герой швыряет топоры, которые прорубают деревья и противников на своём пути и возвращаются обратно. Каждый топор задевает одного врага лишь единожды и увеличивает урон, получаемый от героя и его существ.</span>
+	<br><br><br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 65</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 8 (Талант: 3)</div>
+	<br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>направленная на точку</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов</p>
+	<p style="line-height: 0.2em;"><b>Тип урона: </b>магический</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Дальность применения: </b>1500</p>
+	<p><b>Радиус: </b>175</p>
+	<p style="line-height: 0.2em;"><b>Дистанция полета топоров: </b>1500</p>
+	<p style="line-height: 0.2em;"><b>Расстояние разлета топоров: </b>450</p>
+	<p><b>Увеличение урона за эффект: </b>6/8/10/12% (<b>Талант:  </b>8,5/10,5/12,5/14,5%)</p>
+	<p style="line-height: 0.2em;"><b>Длительность эффекта: </b>12</p>
+	<span class="undertext">Учась в одиночку выживать в дикой природе, Каррох приноровился использовать два томагавка, одинаково хорошо справляясь и с деревьями, и с врагами.</span>
+
+
+
+	<hr class="hr">
+	<h2 style="position: relative;text-align: center;">Call of the Wild (Кабан)</h2>	
+	<img class="skillicon" src="kaban.png" align="left" alt="img">
+	<span>Герой призывает на поле битвы кабана-помощника.</span>
+	<br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 60/65/70/75</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 42/38/34/30</div>
+	<br><br><br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>ненаправленная</p>	
+	<br>
+	<p style="line-height: 0.2em;"><b>Количество кабанов: </b>1</p>
+	<p style="line-height: 0.2em;"><b>Длительность жизни: </b>60</p>
+	<span class="undertext">Подружившись в детстве с удивительным зверем, Каррох научился взывать к помощи животных.</span>
+	<hr class="hr">
+
+
+	<h2 style="position: relative;text-align: center;">Call of the Wild (Ястреб)</h2>	
+	<img class="skillicon" src="yastreb.png" align="left" alt="img">
+	<span>Герой отправляет невидимого ястреба разведать территорию.</span>
+	<br><br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 30</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 60/50/40/30 (Aghanim's Shard: 50/40/30/20)</div>
+	<br><br>
+	<p><b>Способность: </b>направленная на область/юнита/автоприменение (с Aghanim's Shard)</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов (с Aghanim's Shard)</p>	
+	<br>	
+	<p style="line-height: 0.2em;"><b>Длительность жизни: </b>60</p>
+	<p style="line-height: 0.2em;"><b>Количество кабанов: </b>1</p>
+	<p style="line-height: 0.2em;"><b>Дальность применения: </b>глобальная</p>
+	<span class="undertext">Подружившись в детстве с удивительным зверем, Каррох научился взывать к помощи животных.</span>
+	<hr class="hr">
+
+
+
+	<h2 style="position: relative;text-align: center;">Inner Beast</h2>	
+	<img class="skillicon" src="beast.png" align="left" alt="img">
+	<span>Высвобождает животную ярость союзников неподалёку, увеличивая скорость их атак.</span>
+	<br><br><br><br><br><br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>аура</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>союзников</p>	
+	<br>	
+	<p style="line-height: 0.2em;"><b>Радиус: </b>1200</p>
+	<p><b>Дополнительная скорость атаки: </b>10/20/30/40 (<b>Талант: </b>20/30/40/50)</p>
+	<p style="line-height: 0.2em;"><b>Длительность задержки ауры: </b>0,5</p>
+	<span class="undertext">Способность пробуждать внутреннюю мощь других существ проявилась у Карроха ещё в тот день, когда король Слома сгинул в лапах своего зверинца.</span>
+	<hr class="hr">
+
+
+	<h2 style="position: relative;text-align: center;">Drums of Slom</h2>	
+	<img class="skillicon" src="drums.png" align="left" alt="img">
+	<span>Герой всё быстрее бьёт в свой барабан. Каждый удар наносит урон врагам вокруг и излечивает владельца способности и существ под его контролем на долю от наносимого урона. Герой не может бить в барабаны, если он обезмолвлен или оглушён.</span>
+	<br><br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 100</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка: 40</div>
+	<br><br>
+	<p style="line-height: 0.2em;"><b>Способность: </b>ненаправленная</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов/союзников</p>	
+	<p style="line-height: 0.2em;"><b>Тип урона: </b>магический</p>
+	<br>	
+	<p style="line-height: 0.2em;"><b>Радиус: </b>600</p>
+	<p style="line-height: 0.2em;"><b>Максимальное количество применений: </b>14</p>
+	<p style="line-height: 0.2em;"><b>Урон за интервал: </b>110</p>
+	<p style="line-height: 0.2em;"><b>Процент урона в виде исцеления (герой): </b>25%</p>
+	<p style="line-height: 0.2em;"><b>Процент урона в виде исцеления (крипы): </b>5%</p>
+	<p style="line-height: 0.2em;"><b>Длительность задержки ауры: </b>0</p>
+	<p style="line-height: 0.2em;"><b>Максимальная продолжительность: </b>6</p>
+	<span class="undertext">Ярость природы безвременна, и посвящённым в её секреты несложно пробудить эхо гнева, возликовавшего при крахе Слома</span>
+	<hr class="hr">
+
+
+
+	<h2 style="position: relative;text-align: center;">Primal Roar</h2>	
+	<img class="skillicon" src="roar.png" align="left" alt="img">
+	<span>Герой издаёт громогласный рык, который оглушает цель и раскидывает всех противников на пути к ней. Все задетые враги получают урон, а у отлетевших в стороны врагов снижается скорость атаки и передвижения. Также на 3 секунды скорость передвижения героя и его существ увеличивается на 40%.</span>
+	<br><br>
+	<img src="mana.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px; float: left; width: 50%">Расход маны: 150/175/200</div>
+	<img src="cooldown.png" alt="img" align="left"><div style="position: relative; left; font-size: 20px">Перезарядка:  100/80/60 (Талант: 70/50/30)</div>
+	<br><br><br>
+	
+	<p style="line-height: 0.2em;"><b>Способность: </b>направлена на врагов</p>
+	<p style="line-height: 0.2em;"><b>Действует на: </b>врагов</p>
+	<p style="line-height: 0.2em;"><b>Тип урона: </b>магический</p>
+	<br>
+	<p style="line-height: 0.2em;"><b>Дальность применения: </b>600</p>
+	<p style="line-height: 0.2em;"><b>Радиус дополнительной скорости: </b>900</p>
+	<p style="line-height: 0.2em;"><b>Радиус откидывания: </b>300</p>
+	<p style="line-height: 0.2em;"><b>Урон: </b>150/225/300</p>
+	<p style="line-height: 0.2em;"><b>Замедление скорости передвижения: </b>60%</p>
+	<p style="line-height: 0.2em;"><b>Замедление скорости атаки: </b>60</p>
+	<p style="line-height: 0.2em;"><b>Дополнительная скорость передвижения союзникам: </b>40%</p>
+	<p style="line-height: 0.2em;"><b>Длительность замедления: </b>3/3,5/4</p>
+	<p style="line-height: 0.2em;"><b>Расстояние откидывания: </b>450</p>
+	<p style="line-height: 0.2em;"><b>Длительность откидывания: </b>1</p>
+	<p style="line-height: 0.2em;"><b>Длительность оглушения: </b>3/3,5/4</p>
+	<p style="line-height: 0.2em;"><b>Длительность ускорения: </b>3/3,5/4</p>
+	<br>
+	<span class="undertext">Beastmaster научился сливать все свои первобытные инстинкты в оглушающий вопль, сеющий смятение в рядах противника.</span>
+	<hr class="hr">
+	<h2 style="position: relative;text-align: left;">Сборка/Builds</h2>
+
+
+	<h3>Начало без спама:</h3>
+	<a class="item" href="https://dota2.ru/items/ring-of-protection/" title="" alt="Ring of Protection"><img src="item/ring_of_protection.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/quelling-blade/" title="" alt="Quelling Blade"><img src="item/blade.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/faerie-fire/" title="" alt="Faerie Fire"><img src="item/faerie_fire.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/iron-branch/" title="" alt="Iron Branch"><img src="item/branches.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/tango/" title="" alt="Tango"><img src="item/tango.png" alt=""></a>
+
+
+	<h3>Если начали против спама:</h3>
+	<a class="item" href="https://dota2.ru/items/magic-stick/" title="" alt="Magic Stick"><img src="item/magic_stick.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/iron-branch/" title="" alt="Iron Branch"><img src="item/branches.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/iron-branch/" title="" alt="Iron Branch"><img src="item/branches.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/quelling-blade/" title="" alt="Quelling Blade"><img src="item/blade.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/ring-of-protection/" title="" alt="Ring of Protection"><img src="item/ring_of_protection.png" alt=""></a>
+
+
+	<h3>Ранняя игра:</h3>
+	<a class="item" href="https://dota2.ru/items/helm-of-iron-will/" title="" alt="Helm of Iron Will"><img src="item/helm_of_iron_will.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/crown/" title="" alt="Crown"><img src="item/crown.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/buckler/" title="" alt="Buckler"><img src="item/buckler.png" alt=""></a>
+
+
+	<h3>10-25 минута:</h3>
+	<a class="item" href="https://dota2.ru/items/helm-of-the-dominator/" title="" alt="Helm of the Dominator"><img src="item/helm_of_the_dominator.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/vladmirs-offering/" title="" alt="Vladmir's Offering"><img src="item/vladmir.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/boots-of-speed/" title="" alt="Boots of Speed"><img src="item/boots.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/helm-of-the-overlord/" title="" alt="Helm of the Overlord"><img src="item/helm_of_the_overlord.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/drum-of-endurance/" title="" alt="Drum of Endurance"><img src="item/ancient_janggo.png" alt=""></a>
+
+
+	<h3>После 25:</h3>
+	<a class="item" href="https://dota2.ru/items/assault-cuirass/" title="" alt="Assault Cuirass"><img src="item/assault.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/blink-dagger/" title="" alt="Blink Dagger"><img src="item/blink.png" alt=""></a>
+
+
+	<h3>Лейт:</h3>
+	<a class="item" href="https://dota2.ru/items/black-king-bar/" title="" alt="Black King Bar"><img src="item/bkb.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/aether-lens/" title="" alt="Aether Lens"><img src="item/aether_lens.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/octarine-core/" title="" alt="Octarine Core"><img src="item/octarine_core.png" alt=""></a>
+
+
+	<h3>Минимум билд:</h3>
+	<a class="item" href="https://dota2.ru/items/magic-stick/" title="" alt="Magic Stick"><img src="item/magic_stick.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/boots-of-speed/" title="" alt="Boots of Speed"><img src="item/boots.png" alt=""></a>
+	<a class="item" href="https://dota2.ru/items/helm-of-the-overlord/" title="" alt="Helm of the Overlord"><img src="item/helm_of_the_overlord.png" alt=""></a>
+	<br>
+	<br>
+
+	<a style="font-size: 25px; text-decoration: none; color: lightblue; text-align: left" href="https://www.youtube.com/@amor.mp4" >YOUTUBE:AmoR</a>
+	<br>
+	<a style="font-size: 25px; text-decoration: none; color: lightblue;align: right;" href="https://steamcommunity.com/sharedfiles/filedetails/?id=2852559072" >
+	ЭТА СБОРКА В STEAM</a>
+	<hr class="hr">
+	<a href="https://dota2.ru">  <img src="int.png" align="right"></a>
+	<br>
+	<br>
+	<a href="https://ci.nsu.ru">  <img src="vki.png" align="left"></a>
+	</div>
+<div id="mySidenav" class="sidenav">
+  		<a style="color: green;" href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  		<a href="https://dg-star.github.io">Main Menu</a>
+  		<a href="https://dota2.ru">Dota 2.ru</a>
+  		<a href="https://ci.nsu.ru">VKI NSU</a>
+  		<a href="#">Support us</a>
+  		<a href="https://dg-star.github.io/contact/contact.html">Contact</a>
+	</div>
+	
+</div>
+
+<script>
+	function openNav() {
+    	document.getElementById("mySidenav").style.width = "250px";
+    	document.getElementById("main").style.marginLeft = "250px";
+    	document.body.style.backgroundColor = "rgba(0,0,0,0.5)";
+	}
+
+	function closeNav() {
+    	document.getElementById("mySidenav").style.width = "0";
+    	document.getElementById("main").style.marginLeft= "0";
+    	document.body.style.backgroundColor = "white";
+	}
+</script>
+</body>		
+</html>
